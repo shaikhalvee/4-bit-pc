@@ -1,0 +1,16 @@
+Before starting the simulation:
+
+step 1: Pray
+step 2: Write the instructions in machine language in "uploader.bin"
+step 3: Ensure that the logic-state, marked as "System_Clk" (in CLOCK block) is in
+	state '0'
+
+After starting the simulation:
+
+step 0(optional): Drink plenty of water and go to wash room
+
+step 1: Initially the logic-probe, marked as "BOOT_COMPLETE" will be '0'. Wait
+	until it becomes '1'
+step 2: Then press and release the "System_Clk" continuously...
+
+Note: Do not bother with contention messages. Ignore them.

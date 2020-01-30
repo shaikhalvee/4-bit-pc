@@ -1,0 +1,9 @@
+CALL
+4
+HLT
+MOVI
+15
+SHR
+OUT
+RET
+HLT

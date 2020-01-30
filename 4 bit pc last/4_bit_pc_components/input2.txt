@@ -1,0 +1,137 @@
+
+E_pc, L_mar
+R_ram, I_pc
+E_mdr, L_ir, L
+
+L_ir2, E_flag2
+L_temp, E_b, C_in, ADC
+E_alu, L_acc, L_flag, R
+
+L_ir2, E_flag2
+L_temp, E_b, S_2, C_in, SBB
+E_alu, L_acc, L_flag, R
+
+L_ir2, E_flag2
+E_pc, L_mar
+ R_ram, I_pc
+E_mdr, L_add,C
+L_pc, E_add, R
+
+L_ir2, E_flag2
+E_pc, L_mar
+ R_ram, I_pc
+E_mdr, L_add, Z
+L_pc, E_add, R
+
+E_pc, L_mar
+R_ram,  I_pc
+E_mdr, L_add, D_sp
+E_sp, L_mar
+L_mdr, E_pc
+W_ram, D_sp
+E_sp, L_mar
+L_mdr, E_flag
+W_ram, D_sp
+E_sp, L_mar
+L_mdr, E_acc
+W_ram, D_sp
+E_sp, L_mar
+L_mdr, E_b
+W_ram, E_add, L_pc, R
+
+L_mar, E_sp
+R_ram, I_sp
+E_mdr, L_b
+L_mar, E_sp
+R_ram, I_sp
+E_mdr, L_acc
+L_mar, E_sp
+R_ram, I_sp
+E_mdr, L_flag
+L_mar, E_sp
+R_ram, I_sp
+E_mdr, L_pc, R
+
+E_accm, L_flag1
+E_acc, L_temp
+SH_2
+E_temp, L_acc, R
+
+E_accl, L_flag1
+E_acc, L_temp
+SH_1
+E_temp, L_acc, R
+
+E_b, L_temp
+E_alu, L_acc, L_flag, R
+
+E_pc, L_mar
+R_ram, I_pc
+E_mdr, L_temp
+E_alu, L_acc, L_flag, R
+
+E_b, L_temp, S_2
+E_alu, L_acc, L_flag, R
+
+E_pc, L_mar
+R_ram, I_pc
+E_mdr, L_mar
+R_ram
+E_mdr, L_temp, S_2
+E_alu, L_acc, L_flag, R
+
+E_b, L_temp, S_0, S_2
+E_alu, L_acc, L_flag, R
+
+E_pc, L_mar
+R_ram, I_pc
+E_mdr, L_temp, S_0
+E_alu, L_acc, L_flag, R
+
+R
+
+D_sp, E_acc, L_mdr
+E_sp, L_mar
+W_ram, R
+
+E_sp, L_mar
+ R_ram, I_sp
+E_mdr, L_acc, R
+
+HLT, R
+
+E_pc, L_mar
+R_ram, I_pc
+L_mar, E_mdr
+R_ram
+L_acc, E_mdr, R
+
+E_pc, L_mar
+R_ram, I_pc
+L_mar, E_mdr
+L_mdr, E_acc
+W_ram, E_mdr, R
+
+L_temp, E_b
+E_alu, S_2
+L_flag, R
+
+L_temp, E_b
+E_alu,S_0,S_2
+L_flag, R
+
+E_pc, L_mar
+R_ram, I_pc
+L_pc, E_mdr, R
+
+L_acc, E_b, R
+
+E_acc, L_b, R
+
+E_pc, L_mar
+R_ram, I_pc
+E_mdr, L_acc, R
+
+E_in, L_acc, R
+
+E_acc, L_out, R
